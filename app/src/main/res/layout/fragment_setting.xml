@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SettingFragment"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            app:layout_collapseMode="pin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/banner" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/toolbar"
+            android:background="@android:color/holo_red_dark" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="LIGHT OR DARK MODE"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="CHANGE FONT SIZE"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/changeFontSize"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:text="CHANGE"
+            android:drawableLeft="@drawable/baseline_arrow_drop_down_24"
+            android:background="@drawable/transparent_background"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KPA MOVIE"
+        android:textSize="40sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="280dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Là một ứng dụng xem phim trực tuyến được phát triển bới KPA Team: Lê Hữu Phúc, Trần Lê Duy An và Ngô Đăng Khoa"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact : kpamovie@gmail.com"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

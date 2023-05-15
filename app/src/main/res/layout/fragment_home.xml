@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment"
+    android:orientation="vertical">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabCategory"
+            app:tabSelectedTextColor="@color/red"
+            app:tabIndicatorColor="@color/red"
+            app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+            >
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabHanhDong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hành Động" />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabKinhDi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kinh Dị" />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabAnime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anime" />
+
+        </com.google.android.material.tabs.TabLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="320dp">
+            <ImageButton
+                android:id="@+id/changeAtoZ"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#E4E3E3"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/changeatoz"/>
+            <ImageButton
+                android:id="@+id/changeZtoA"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#E4E3E3"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="15dp"
+                app:srcCompat="@drawable/changeztoa"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMovie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"/>
+        </ScrollView>
+</LinearLayout>
