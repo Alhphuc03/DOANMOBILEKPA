@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36132094314",
+    "project_id": "doanmovie",
+    "storage_bucket": "doanmovie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36132094314:android:db0280a0f37f387e73a513",
+        "android_client_info": {
+          "package_name": "com.example.doanmobilekpa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36132094314-2hd4j08u15ic6slp8pt399lntka224ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRPcd-VDhVV8A-8HzGC_YjSeWnJZIrFV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36132094314-2hd4j08u15ic6slp8pt399lntka224ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
